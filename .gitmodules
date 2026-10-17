@@ -1,6 +1,0 @@
-[submodule "SchoolTouch-Fullstack"]
-	path = SchoolTouch-Fullstack
-	url = https://github.com/BeautyMauryaa/SchoolTouch.git
-[submodule "SchoolTouch-CRUD"]
-	path = SchoolTouch-CRUD
-	url = https://github.com/BeautyMauryaa/CURD-operation-of-School-Touch.git
