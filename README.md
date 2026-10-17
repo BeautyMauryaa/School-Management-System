@@ -1,40 +1,55 @@
-# SchoolTouch — Static UI Prototype
+# SchoolTouch — School Management System
 
-A front-end prototype of a school management website built with HTML, CSS, Bootstrap, and vanilla JavaScript. The repository contains separate pages for school roles and workflows, including dashboards, timetables, fees, attendance, and homework.
+This repository is the central entry point for the SchoolTouch school-management project collection.
 
-## Pages included
+## Projects
 
-- Landing page and login page
-- Admin, teacher, student, and parent dashboard pages
-- Timetable and attendance pages
-- Fees, results, notices, and homework-related pages
-- Shared styling for the page layouts
+- **Static UI prototype (this repository root):** HTML, CSS, Bootstrap, and vanilla JavaScript pages for school roles and workflows.
+- **Full-stack SchoolTouch:** `SchoolTouch-Fullstack/` — the MERN-based application with client and server.
+- **CRUD practice version:** `SchoolTouch-CRUD/` — the focused CRUD version of SchoolTouch.
 
-## Tech stack
+The two nested projects are included as Git submodules so their original repositories and commit histories remain intact. They are not copied into the root application, and they do not automatically share code or run as one application.
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- Vanilla JavaScript
+## Clone the full collection
 
-## Run locally
+Clone this repository and initialize the submodules:
 
-This repository is a static-page prototype; it does not include a Node.js server or database in this repo.
+```bash
+git clone --recurse-submodules https://github.com/BeautyMauryaa/School-Management-System.git
+cd School-Management-System
+```
 
-1. Clone the project:
+If you already cloned without submodules:
 
-   ```bash
-   git clone https://github.com/BeautyMauryaa/School-Management-System.git
-   cd School-Management-System
-   ```
+```bash
+git submodule update --init --recursive
+```
 
-2. Open `index.html` in a browser. For a more reliable local preview, use the VS Code Live Server extension.
+### Static UI prototype
 
-## Status and limitations
+Open `index.html` in a browser, or use VS Code Live Server.
 
-This repository is primarily a UI prototype. Do not assume that login, account roles, attendance, fees, or other workflows are connected to a real backend unless separately implemented and verified.
+### Full-stack SchoolTouch
 
-Some filenames are from early development, so keep links and file names in sync when making changes.
+```bash
+cd SchoolTouch-Fullstack
+```
+
+Follow the full-stack setup instructions in `SchoolTouch-Fullstack/README.md`. It requires Node.js and a MongoDB instance.
+
+### CRUD version
+
+```bash
+cd SchoolTouch-CRUD
+```
+
+Follow the instructions in that submodule's README.
+
+## Important notes
+
+- The static prototype, MERN application, and CRUD version are separate implementations. Features in one version should not be assumed to exist in another.
+- This consolidation preserves the source repositories as submodules rather than copying files over each other or destroying their histories.
+- Before calling the combined collection production-ready, run each project independently and verify its setup, authentication, API integrations, and persistence.
 
 ## Author
 
