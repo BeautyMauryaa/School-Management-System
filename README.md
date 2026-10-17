@@ -1,55 +1,34 @@
 # SchoolTouch — School Management System
 
-This repository is the central entry point for the SchoolTouch school-management project collection.
+A static school-management website prototype built with HTML, CSS, Bootstrap, and vanilla JavaScript. It contains separate pages for school roles and workflows.
 
-## Projects
+## Pages and workflows
 
-- **Static UI prototype (this repository root):** HTML, CSS, Bootstrap, and vanilla JavaScript pages for school roles and workflows.
-- **Full-stack SchoolTouch:** `SchoolTouch-Fullstack/` — the MERN-based application with client and server.
-- **CRUD practice version:** `SchoolTouch-CRUD/` — the focused CRUD version of SchoolTouch.
+- Landing and login pages
+- Admin, teacher, student, and parent dashboards
+- Timetable and attendance
+- Fees, results, notices, and homework-related pages
 
-The two nested projects are included as Git submodules so their original repositories and commit histories remain intact. They are not copied into the root application, and they do not automatically share code or run as one application.
+## Tech stack
 
-## Clone the full collection
+- HTML5 and CSS3
+- Bootstrap 5
+- Vanilla JavaScript
 
-Clone this repository and initialize the submodules:
+## Run locally
+
+Clone the repository:
 
 ```bash
-git clone --recurse-submodules https://github.com/BeautyMauryaa/School-Management-System.git
+git clone https://github.com/BeautyMauryaa/School-Management-System.git
 cd School-Management-System
 ```
 
-If you already cloned without submodules:
+Open `index.html` in a browser, or use the VS Code Live Server extension.
 
-```bash
-git submodule update --init --recursive
-```
+## Status and limitations
 
-### Static UI prototype
-
-Open `index.html` in a browser, or use VS Code Live Server.
-
-### Full-stack SchoolTouch
-
-```bash
-cd SchoolTouch-Fullstack
-```
-
-Follow the full-stack setup instructions in `SchoolTouch-Fullstack/README.md`. It requires Node.js and a MongoDB instance.
-
-### CRUD version
-
-```bash
-cd SchoolTouch-CRUD
-```
-
-Follow the instructions in that submodule's README.
-
-## Important notes
-
-- The static prototype, MERN application, and CRUD version are separate implementations. Features in one version should not be assumed to exist in another.
-- This consolidation preserves the source repositories as submodules rather than copying files over each other or destroying their histories.
-- Before calling the combined collection production-ready, run each project independently and verify its setup, authentication, API integrations, and persistence.
+This repository is a static UI prototype. Do not assume that login, account roles, attendance, fees, or other workflows are connected to a real backend unless separately implemented and verified.
 
 ## Author
 
